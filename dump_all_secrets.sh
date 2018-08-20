@@ -2,7 +2,7 @@
 
 allsecrets=($(docker secret ls --format '{{printf "%s " .Name}}' | tr -d '\n'))
 
-docker service create \
+docker service create -d \
   $(for secret in "${allsecrets[@]}";
     do echo --secret $secret;
   done) \
