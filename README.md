@@ -4,9 +4,9 @@ simple container to dump secrets data from swarm
 
 # usage
 
-`git clone https://github.com/adamancini/docker-dumpsecrets.git && cd docker-dumpsecrets`
-`docker build -t dumpsecrets .`
-`./dump_all_secrets.sh`
+```git clone https://github.com/adamancini/docker-dumpsecrets.git && cd docker-dumpsecrets```
+```docker build -t dumpsecrets .```
+```./dump_all_secrets.sh```
 
 # dump_all_secrets.sh
 Iterates over every secret name returned by `docker secrets ls` and creates a dummy alpine service with each `--secret` flag populated.  
