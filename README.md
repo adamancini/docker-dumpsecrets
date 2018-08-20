@@ -6,7 +6,7 @@ simple container to dump secrets data from swarm
 
 ```git clone https://github.com/adamancini/docker-dumpsecrets.git && cd docker-dumpsecrets```
 
-```docker build -t dumpsecrets .```
+```docker build -t support/dumpsecrets .```
 
 ```./dump_all_secrets.sh```
 
